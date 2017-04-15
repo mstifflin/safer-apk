@@ -44,6 +44,9 @@ const MenuDrawer = DrawerNavigator({
   Settings: { screen: Settings },
   'Add Fence': { screen: AddFence },
   'Log Out': { screen: LogOut },
+  AddFriend: { screen: AddFriendList },  
+  Settings: { screen: Settings },
+  Fences: {screen: AddFence}
 }, {
   drawerWidth: 200
 });
