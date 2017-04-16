@@ -131,47 +131,11 @@ export default class HomeScreen extends Component {
         <View>
           <PushController onChangeToken={(token) => {this.setState({FCMToken: token})}}/>
           <HomeFavorite />
-        <View style={styles.container}>
-          <Text>Hello {this.state.user.name}</Text>
-          <Text>Notifications???</Text>
-          <Button
-            onPress={() => navigate('FriendMap', { 
-                friendId: 1234567890,
-                friendName: 'Kyle' 
-              })
-            }
-            title="See yo friend yo"
-          />
-          <TouchableOpacity onPress={() => {this._signOut(); }}>
-            <View style={{marginTop: 50}}>
-              <Text>Log out</Text>
-            </View>
-          </TouchableOpacity>
         </View>
       )
     }
   }
-        // <View style={styles.container}>
-        //   <Text>Hello {this.state.user.name}</Text>
-        //   <Text>Notifications???</Text>
-        //   <Button
-        //     onPress={() => navigate('FriendMap', { 
-        //         friendId: 1234567890,
-        //         friendName: 'Kyle' 
-        //       })
-        //     }
-        //     title="See yo friend yo"
-        //   />
-        //   <Button 
-        //     onPress ={() => navigate('AddFence')}
-        //     title="Geofence"
-        //   />
-        //   <TouchableOpacity onPress={() => {this._signOut(); }}>
-        //     <View style={{marginTop: 50}}>
-        //       <Text>Log out</Text>
-        //     </View>
-        //   </TouchableOpacity>
-        // </View>
+
 
   async _setupGoogleSignin() {
     try {
