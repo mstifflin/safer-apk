@@ -1,5 +1,5 @@
 # Safer
-
+Video example of the application: https://youtu.be/iDxjmcjgRn0
 > React Native &amp; client side files for the Safer project
 >> Safer - A peace of mind
 >> Safer allows users to see at a glance that their loved ones are safe using labeled geolocation fencing.
